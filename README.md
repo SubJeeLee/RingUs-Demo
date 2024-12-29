@@ -1,2 +1,0 @@
-# RingUs-Demo
-Demo version
