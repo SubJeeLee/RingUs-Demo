@@ -1,6 +1,7 @@
 import Logo from "../../assets/image.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-//import MenuIcon from "@/assets/menu.svg";
+import { ReactSVG } from "react-svg";
+import MenuIcon from "../../assets/menu.svg";
 
 export const Header = () => {
   return (
@@ -13,7 +14,10 @@ export const Header = () => {
             <LazyLoadImage src={Logo} alt="Saas Logo" height={50} width={50} />
 
             {/* 메뉴 아이콘 (모바일용) */}
-            {/* <MenuIcon className="h-6 w-6 md:hidden cursor-pointer" /> */}
+            <ReactSVG
+              src={MenuIcon}
+              className="h-6 w-6 md:hidden cursor-pointer"
+            />
 
             {/* 내비게이션 메뉴 (데스크탑용) */}
             <nav className="hidden md:flex gap-6 text-black/70 items-center">
